@@ -71,7 +71,7 @@ def add_piece(board, row, col):
 def successors(board):
     return [ add_piece(board, r, c) for r in range(0, N) for c in range(0,N) ]
 
-# Successor function for n-rooks (QUESTION 3)
+# Successor function for n-rooks (Efficient)
 def successors2(board):
     new_state = []
     for c in range(0, N):
@@ -81,7 +81,7 @@ def successors2(board):
                 new_state.append(state)
     return new_state
 
-# Successor function for n-rooks (QUESTION 4)
+# Successor function for n-rooks (More Efficient)
 def successors3(board):
     # new_state = []
     # for c in range(0, N):
